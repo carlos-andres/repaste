@@ -1,0 +1,166 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Accessibility (for Copy and clean)" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bedienungshilfen (für „Kopieren und bereinigen“)" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Accesibilidad (para Copiar y limpiar)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "アクセシビリティ（「コピーしてクリーン」用）" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "辅助功能（用于“复制并清理”）" } }
+      }
+    },
+    "Clean clipboard" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Zwischenablage bereinigen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Limpiar portapapeles" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クリップボードをクリーン" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "清理剪贴板" } }
+      }
+    },
+    "Clipboard cleaned" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Zwischenablage bereinigt" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Limpieza portapapeles ok" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クリップボードをクリーンしました" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "剪贴板已清理" } }
+      }
+    },
+    "Copy and clean" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Kopieren und bereinigen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Copiar y limpiar" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "コピーしてクリーン" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "复制并清理" } }
+      }
+    },
+    "Grant…" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erteilen…" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Conceder…" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "許可…" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "授权…" } }
+      }
+    },
+    "Granted" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erteilt" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Concedido" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "許可済み" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已授权" } }
+      }
+    },
+    "Listening… (Esc cancels)" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Aufnahme… (Esc bricht ab)" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Escuchando… (Esc cancela)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "入力待ち…（Esc でキャンセル）" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "监听中…（Esc 取消）" } }
+      }
+    },
+    "Not granted" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nicht erteilt" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "No concedido" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "未許可" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "未授权" } }
+      }
+    },
+    "Nothing to clean" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nichts zu bereinigen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Nada que limpiar" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クリーンする内容がありません" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无需清理" } }
+      }
+    },
+    "Notifications" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Mitteilungen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Notificaciones" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "通知" } }
+      }
+    },
+    "Open Repaste at login" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Repaste bei der Anmeldung öffnen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Abrir Repaste al iniciar sesión" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ログイン時に Repaste を開く" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "登录时打开 Repaste" } }
+      }
+    },
+    "Permissions" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Berechtigungen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Permisos" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "アクセス権" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "权限" } }
+      }
+    },
+    "Protected content — left untouched" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Geschützter Inhalt – nicht verändert" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Contenido protegido — no se tocó" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "保護されたコンテンツ — 変更しませんでした" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "受保护内容 — 未做更改" } }
+      }
+    },
+    "Quit" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Beenden" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Salir" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "終了" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "退出" } }
+      }
+    },
+    "Repaste Settings" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Repaste-Einstellungen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ajustes de Repaste" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Repaste 設定" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Repaste 设置" } }
+      }
+    },
+    "Settings…" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen…" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ajustes…" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "設定…" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "设置…" } }
+      }
+    },
+    "Shortcuts" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tastaturkurzbefehle" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Atajos" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "ショートカット" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "快捷键" } }
+      }
+    },
+    "Show ✓ when cleaning" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "✓ beim Bereinigen anzeigen" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Mostrar ✓ al limpiar" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "クリーン時に ✓ を表示" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "清理时显示 ✓" } }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Sistema" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "システム" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "系统" } }
+      }
+    },
+    "Text cleaned" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Text bereinigt" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Texto limpio" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "テキストをクリーンしました" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "文本已清理" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

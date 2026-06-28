@@ -1,0 +1,104 @@
+name: Repaste
+
+# The .xcodeproj is generated from this file (XcodeGen) and is not versioned;
+# regenerate with `xcodegen generate`. project.yml is the source of truth for build settings.
+options:
+  bundleIdPrefix: com.calo
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+# Signing identity (team/style/cert) lives in Config/Signing.xcconfig: public ad-hoc defaults plus an
+# optional include of the maintainer's gitignored local file with the real Developer ID. Keeping it out
+# of source leaves the public repo free of the personal account and lets anyone build without a cert.
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+    SWIFT_VERSION: "6.0"   # language mode 6 (strict concurrency); toolchain Swift 6.2.4
+    ENABLE_HARDENED_RUNTIME: YES
+  configs:
+    # Release: timestamp + no get-task-allow (debug entitlement) so the build notarizes.
+    Release:
+      OTHER_CODE_SIGN_FLAGS: "--timestamp"
+      CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+
+# Zero third-party runtime dependencies. RepasteCore is first-party (our engine, no AppKit),
+# split into a framework for host-free tests and to enforce the layer boundary (Domain without AppKit).
+# Global shortcuts = our own Carbon RegisterEventHotKey (not KeyboardShortcuts).
+
+targets:
+  RepasteCore:
+    type: framework
+    platform: macOS
+    sources:
+      - Domain
+      - Application
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.calo.RePaste.Core
+        GENERATE_INFOPLIST_FILE: YES
+
+  Repaste:
+    type: application
+    platform: macOS
+    sources:
+      - Infrastructure
+      - Presentation
+      - Resources
+    info:
+      path: Repaste-Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleName: Repaste
+        CFBundleDisplayName: Repaste
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        LSMinimumSystemVersion: "15.0"
+        LSApplicationCategoryType: public.app-category.utilities
+        NSHumanReadableCopyright: "© 2026 Carlos A Loaiza O"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.calo.RePaste
+        CODE_SIGN_ENTITLEMENTS: Repaste.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: RepasteCore
+
+  RepasteTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - RepasteTests
+      # Adapters compiled into the test bundle too, to cover their host-free invariants (pasteboard
+      # privacy, defaults, hotkey combos, collision rejection) without TEST_HOST or loading the app.
+      - path: Infrastructure/SystemPasteboard.swift
+      - path: Infrastructure/UserDefaultsSettings.swift
+      - path: Infrastructure/Hotkey.swift
+      - path: Infrastructure/HotkeyManager.swift
+      - path: Infrastructure/HotkeyTrigger.swift
+    dependencies:
+      - target: RepasteCore
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        # Host-free logic tests: link only RepasteCore, never load the app (enforces Domain without AppKit).
+        TEST_HOST: ""
+        BUNDLE_LOADER: ""
+
+schemes:
+  Repaste:
+    build:
+      targets:
+        Repaste: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - RepasteTests

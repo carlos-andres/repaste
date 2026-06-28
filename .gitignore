@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+build-release/
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+*.moved-aside
+
+# XcodeGen (generated from project.yml — regenerate with `xcodegen generate`)
+*.xcodeproj/
+Repaste-Info.plist
+
+# Signing — maintainer's real values (Team ID, cert). Never published.
+Config/Signing.local.xcconfig
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Misc
+*.swp
+*~
